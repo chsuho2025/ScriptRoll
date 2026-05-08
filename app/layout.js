@@ -1,25 +1,19 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'ScriptRoll — 대본이 YouTube 영상이 됩니다',
-  description: 'AI가 나레이션, 영상 클립, 배경음악을 자동 생성합니다. 대본 하나면 완성된 YouTube 영상이 완성됩니다.',
-  keywords: ['AI 영상 생성', '대본 영상 변환', 'YouTube 자동화', 'TTS 영상', 'AI 콘텐츠'],
-  openGraph: {
-    title: 'ScriptRoll — 대본이 YouTube 영상이 됩니다',
-    description: 'AI가 나레이션, 영상 클립, 배경음악을 자동 생성합니다.',
-    type: 'website',
-  },
+  title: 'ScriptRoll — 대본이 영상이 됩니다',
+  description: 'AI가 나레이션, 영상 클립, 배경음악을 자동 생성합니다.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
           rel="stylesheet"
-          as="style"
-          crossOrigin="anonymous"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
       </head>
       <body>{children}</body>
